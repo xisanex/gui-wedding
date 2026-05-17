@@ -1,0 +1,15 @@
+.navbar-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+  padding: 0 20px;
+  border: 1px solid gray;
+
+  a {
+    justify-content: flex-start;
+  }
+  mat-icon {
+    align-items: flex-start;
+  }
+}
