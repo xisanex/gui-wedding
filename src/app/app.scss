@@ -1,13 +1,12 @@
 .app-container {
-    display: flex;
+  display: flex;
 
-    .navbar-container {
-        width: 300px;
-    }
+  .navbar-container {
+    width: 300px;
+  }
 
-    
-    .main {
-        flex-grow: 1;
-
-    }
+  .main {
+    flex-grow: 1;
+    margin: 48px;
+  }
 }

@@ -1,0 +1,63 @@
+<div class="page-title">
+  <h1>Budżet</h1>
+  <a matButton="filled" [routerLink]="['edit']" extended>
+    <mat-icon>edit</mat-icon>
+    Edytuj budżet
+  </a>
+</div>
+
+<div class="all-cards">
+  <div class="top-cards">
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <h2 class="fs-20 mb-16 fw-400">Całkowity budżet</h2>
+      </mat-card-header>
+      <mat-card-content>
+        <p class="fs-24"><b>32 450 zł</b></p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <h2 class="fs-20 mb-16 fw-400">Wydano</h2>
+      </mat-card-header>
+      <mat-card-content>
+        <p class="fs-24"><b>80 000 zł</b></p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <h2 class="fs-20 mb-16 fw-400">Pozostało</h2>
+      </mat-card-header>
+      <mat-card-content>
+        <p class="fs-24"><b>47 550 zł</b></p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <mat-card appearance="outlined">
+    <mat-card-header>
+      <h2 class="fs-24 mb-16 fw-500">Podsumowanie budżetu</h2>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="d-flex">
+        <div class="w-100">KOLO</div>
+        <div class="w-100">PODSUMOWANIE</div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card appearance="outlined">
+    <mat-card-header>
+      <div class="d-flex align-items-center mb-16 column-gap-16">
+        <h2 class="fs-24 fw-500">Lista wydatków</h2>
+        <button matButton="outlined" extended>
+          <mat-icon>add_circle_outline</mat-icon>
+          Dodaj wydatek
+        </button>
+      </div>
+    </mat-card-header>
+    <mat-card-content> </mat-card-content>
+  </mat-card>
+</div>
