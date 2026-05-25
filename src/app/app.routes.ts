@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { BudgetComponent } from './pages/budget/budget.component';
+import { budgetRoutes } from './pages/budget/budget.routes';
 import { GuestsComponent } from './pages/guests/guests.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { noteroutes } from './pages/notes/notes.routes';
@@ -14,7 +14,7 @@ export const routes: Routes = [
   },
   {
     path: 'budget',
-    loadComponent: () => BudgetComponent,
+    loadChildren: () => budgetRoutes,
   },
   {
     path: 'notes',
