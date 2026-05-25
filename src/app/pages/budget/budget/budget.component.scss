@@ -1,0 +1,25 @@
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.all-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .top-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    .mdc-card {
+      flex-grow: 1;
+    }
+  }
+}
+
+.mdc-card {
+  background-color: white;
+}

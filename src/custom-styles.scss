@@ -17,3 +17,112 @@ a {
 body {
   font-size: 16px;
 }
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+$font-sizes: 20, 24, 28;
+
+@each $size in $font-sizes {
+  .fs-#{$size} {
+    font-size: #{$size}px;
+  }
+}
+
+$font-weights: 300, 400, 500, 600, 700;
+
+@each $size in $font-weights {
+  .fw-#{$size} {
+    font-weight: #{$size};
+  }
+}
+
+$space-sizes: 8, 16, 24, 32;
+
+@each $size in $space-sizes {
+  .m-#{$size} {
+    margin: #{$size}px;
+  }
+
+  .mt-#{$size} {
+    margin-top: #{$size}px;
+  }
+
+  .mr-#{$size} {
+    margin-right: #{$size}px;
+  }
+
+  .mb-#{$size} {
+    margin-bottom: #{$size}px;
+  }
+
+  .ml-#{$size} {
+    margin-left: #{$size}px;
+  }
+
+  .my-#{$size} {
+    margin-top: #{$size}px;
+    margin-bottom: #{$size}px;
+  }
+
+  .mx-#{$size} {
+    margin-left: #{$size}px;
+    margin-right: #{$size}px;
+  }
+
+  .p-#{$size} {
+    padding: #{$size}px;
+  }
+
+  .pt-#{$size} {
+    padding-top: #{$size}px;
+  }
+
+  .pr-#{$size} {
+    padding-right: #{$size}px;
+  }
+
+  .pb-#{$size} {
+    padding-bottom: #{$size}px;
+  }
+
+  .pl-#{$size} {
+    padding-left: #{$size}px;
+  }
+
+  .py-#{$size} {
+    padding-top: #{$size}px;
+    padding-bottom: #{$size}px;
+  }
+
+  .px-#{$size} {
+    padding-left: #{$size}px;
+    padding-right: #{$size}px;
+  }
+
+  .column-gap-#{$size} {
+    column-gap: #{$size}px;
+  }
+
+  .row-gap-#{$size} {
+    row-gap: #{$size}px;
+  }
+
+  .gap-#{$size} {
+    column-gap: #{$size}px;
+    row-gap: #{$size}px;
+  }
+}
