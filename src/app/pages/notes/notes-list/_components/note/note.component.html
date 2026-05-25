@@ -1,0 +1,14 @@
+<div class="notes-container">
+  @for (note of notes; track $index) {
+    <div class="note">
+      <p>{{ note.title }}</p>
+      <p>{{ note.text }}</p>
+      <p>{{ note.creationDate }}</p>
+      <div class="note-icons">
+        <mat-icon>preview</mat-icon>
+        <mat-icon>edit</mat-icon>
+        <mat-icon>delete</mat-icon>
+      </div>
+    </div>
+  }
+</div>

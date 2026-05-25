@@ -1,0 +1,19 @@
+.notes-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .note {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 20px;
+    &-icons {
+      align-self: flex-end;
+    }
+  }
+}

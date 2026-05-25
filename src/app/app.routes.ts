@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { HomePageComponent } from './pages/home-page/home-page.component';
 import { BudgetComponent } from './pages/budget/budget.component';
-import { NotesComponent } from './pages/notes/notes.component';
 import { GuestsComponent } from './pages/guests/guests.component';
-import { ServiceProvidersComponent } from './pages/service-providers/service-providers.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { noteroutes } from './pages/notes/notes.routes';
 import { NotificationsComponent } from './pages/notifications/notifications.component';
+import { ServiceProvidersComponent } from './pages/service-providers/service-providers.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 
 export const routes: Routes = [
@@ -18,21 +18,21 @@ export const routes: Routes = [
   },
   {
     path: 'notes',
-    loadComponent: () => NotesComponent,
+    loadChildren: () => noteroutes,
   },
-    {
+  {
     path: 'guests',
     loadComponent: () => GuestsComponent,
   },
-    {
+  {
     path: 'service-providers',
     loadComponent: () => ServiceProvidersComponent,
   },
-    {
+  {
     path: 'notifications',
     loadComponent: () => NotificationsComponent,
   },
-    {
+  {
     path: 'settings',
     loadComponent: () => SettingsComponent,
   },
