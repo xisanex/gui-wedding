@@ -9,8 +9,8 @@ export interface Expense {
 }
 
 export interface PercentageAndValue {
-  value: string;
-  percentage: string;
+  value: number;
+  percentage: number;
 }
 
 export enum ExpenseStatus {
@@ -26,7 +26,7 @@ export interface CategoryDetails {
 }
 
 export interface BudgetBalance {
-  total: string;
+  total: number;
   spent: PercentageAndValue;
   remain: PercentageAndValue;
 }

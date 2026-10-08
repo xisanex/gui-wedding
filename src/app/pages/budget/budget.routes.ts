@@ -8,7 +8,7 @@ export const budgetRoutes: Routes = [
     loadComponent: () => BudgetComponent,
   },
   {
-    path: 'edit/:id',
+    path: 'edit',
     loadComponent: () => AddEditBudgetComponent,
   },
   {

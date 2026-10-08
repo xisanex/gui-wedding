@@ -21,14 +21,14 @@ export interface ChangeExpense {
 @Injectable({ providedIn: 'root' })
 export class BudgetApiMockService {
   private readonly budgetBalance: BudgetBalance = {
-    total: '110000',
+    total: 110000,
     remain: {
-      value: '34000',
-      percentage: '31',
+      value: 34000,
+      percentage: 31,
     },
     spent: {
-      value: '76000',
-      percentage: '69',
+      value: 76000,
+      percentage: 69,
     },
   };
 
